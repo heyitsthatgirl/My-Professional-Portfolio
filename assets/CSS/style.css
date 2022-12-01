@@ -1,25 +1,106 @@
+:root {
+    --background-color: #6494ed57;
+}
+
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 20px;
+    background: image(StockSnap_R6CJA6EBTM.jpg);
 }
 
 .header{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    height: max-content;
-    background-color: cornflowerblue;
-    padding: 25px 25px 0px 25px;
+    background-color: var(--background-color);
+    margin-bottom: 20px;
 }
 
 .header h1 {
-    text-align: left;
+    display: flex;
     font-size: 44px;
+    padding-left: 25px;
 }
 
 .header nav ul li {
     display: inline-flex;
     text-align: right;
-    padding: 20px 10px 20px 10px;
+    padding: 25px;
     font-size: 26px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.about-me {
+    display: flex;
+    height: max-content;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: var(--background-color);
+}
+
+.about-me h2 {
+    text-align: end;
+    padding: 25px;
+    border-right: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.about-me p {
+    text-align: start;
+    padding: 25px;
+}
+.projects {
+    display: flex;
+    height: max-content;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: var(--background-color);
+}
+
+.projects h2 {
+    text-align: end;
+    padding: 25px;
+    border-right: solid;
+    border-color: black;
+    border-width: 1px;
+}
+ .projects p {
+    text-align: start;
+    padding: 25px;
+ }
+
+.projects #project-one {
+
+}
+
+.contact-me {
+    display: flex;
+    height: max-content;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: var(--background-color);
+}
+
+.contact-me h2 {
+    text-align: end;
+    padding: 25px;
+    border-right: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.contact-me p {
+    text-align: start;
+    padding: 25px;
+}
