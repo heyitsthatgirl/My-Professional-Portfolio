@@ -1,0 +1,25 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: max-content;
+    background-color: cornflowerblue;
+    padding: 25px 25px 0px 25px;
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 44px;
+}
+
+.header nav ul li {
+    display: inline-flex;
+    text-align: right;
+    padding: 20px 10px 20px 10px;
+    font-size: 26px;
+}
+
