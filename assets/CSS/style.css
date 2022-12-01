@@ -1,5 +1,5 @@
 :root {
-    --background-color: #6494ed57;
+    --background-color: #687b75c9;
 }
 
 
@@ -8,8 +8,12 @@
 }
 
 body {
-    margin: 20px;
-    background: image(StockSnap_R6CJA6EBTM.jpg);
+    margin: 20px 40px 20px 40px;
+    background-image: url('../images/backgroundsample.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .header{
