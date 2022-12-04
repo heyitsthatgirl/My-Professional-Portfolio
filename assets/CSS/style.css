@@ -28,14 +28,24 @@ header {
     background-color: var(--background-color);
 }
 
+.header-image {
+    display: block;
+    height: 150px;
+    width: 125px;
+    object-fit: contain;
+    margin: 25px;
+    float: left; 
+    opacity: .90;
+}
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    padding-left: 25px;
+    padding-top: 25px;
 }
 
 .header nav {
-    padding-top: 30px;
+    padding-top: 40px;
     margin-right: 40px;
     float: right;
     font-size: 26px;
@@ -98,6 +108,7 @@ section {
     border-style: dotted;
     border-width: 1px;
     border-radius: 5px;
+    background-color: var(--background-color);
 
 }
 
@@ -129,26 +140,13 @@ section {
     text-align: left;
 }
 
-.bottom-left {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    font-size: 24px;
-}  
-
-.bottom-left-project-uno {
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    font-size: 32px;
-}
-
 .my-work p img {
     display: inline-block;
     object-fit: cover;
     opacity: .5;
     height: 200px;
     width: 45%;
+    min-width: 350px;
     margin: 25px;
     border-style: solid;
     border-width: 3px;
@@ -167,6 +165,21 @@ section {
     border-color: var(--background-color);
     
 } 
+
+.bottom-left { 
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-size: 24px;
+}  
+
+.bottom-left-project-uno { 
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-size: 32px;
+}
+
 
 
 
