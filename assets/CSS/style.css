@@ -1,5 +1,5 @@
 :root {
-    --background-color: rgba(125, 167, 146, 0.57);
+    --background-color: rgba(125, 167, 146, 0.423);
 }
 
 
@@ -122,6 +122,12 @@ section {
     font-size: 24px;
 }  
 
+.bottom-left-project-uno {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    font-size: 32px;
+}
 
 .my-work p img {
     display: inline-block;
