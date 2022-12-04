@@ -87,6 +87,20 @@ section {
     margin-right: 25px;
 }
 
+#contact {
+    display: inline-block;
+    height: fit-content;
+    width: 200px;
+    margin: 15px 50px 15px 100px;
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
 .my-work {
     display: inline-block;
     padding: 25px;
@@ -154,7 +168,9 @@ section {
     
 } 
 
-.contact-me {
+
+
+/*.contact-me {
     display: inline-block;
     padding: 25px;
 }
@@ -172,14 +188,14 @@ section {
     display: block;
     height: fit-content;
     padding: 25px;
-    /* text-align: start; */
+    /* text-align: start; 
     border-left: solid;
     border-width: 1px;
     margin-left: 135px;
     margin-right: 25px;
 }
 
-/*  
+
 .section {
  
     margin-bottom: 25px;
