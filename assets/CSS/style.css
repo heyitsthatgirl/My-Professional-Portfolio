@@ -1,17 +1,21 @@
+/* sets a variable to be re-used throughout the page */
 :root {
     --greenish: rgba(125, 167, 146, 0.423); 
 }
 
+/* prevents content from running off the sides of the page */
 * {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Arial', sans-serif;
+    font-family: 'Gill Sans', 'Arial', sans-serif; 
 
 }
 
+/* sets a background of gradient green */
 body {
     background-image: linear-gradient(rgb(212, 251, 231) 0%, rgb(125, 167, 146) 100%);
 }
 
+/* allows all elements within the header to display next to eachother, width is entire page */
 header {
     display: inline-block;
     height: fit-content;
@@ -21,6 +25,7 @@ header {
     background-color: var(--greenish);
 }
 
+/* sets size of picture and lets it fit without warping, fits on the left side of header with even spacing around */
 header img {
     height: 150px;
     width: 125px;
@@ -30,12 +35,14 @@ header img {
     opacity: .90;
 }
 
+/* allows my name to display on the right of my picture */
 header h1 {
     display: inline-block;
     font-size: 48px;
     padding-top: 25px;
 }
 
+/* displays navigation bar on the right side of header */
 header nav {
     padding-top: 40px;
     margin-right: 40px;
@@ -43,6 +50,7 @@ header nav {
     font-size: 26px;
 }
 
+/* allows all nav items to be the same size and display evenly-spaced */
 header nav ul li {
     display: inline-block;
     list-style-type: none;
@@ -52,22 +60,26 @@ header nav ul li {
 
 }
 
+/* sets the style for all anchors on the page */
 a {
     color: black;
     text-decoration: none;
 }
 
+/* allows all sections to stretch to fit the height of the content and take up the width of the page */
 section {
     display: inline-block;
     height: fit-content;
     width: 100%;
 }
 
+/* allows elements in the content class to display next to eachother in their blocks */
 .content {
     display: inline-block;
     padding: 25px;
 }
 
+/* puts heading text for sections on the left side of the page */
 .content h2 {
     display: block;
     height: max-content;
@@ -76,6 +88,7 @@ section {
     float: left;
 }
 
+/* puts a line to the left of the content in each section and spaces it evenly from the headings */
 .content p {
     padding: 25px;
     border-left: solid;
@@ -85,15 +98,18 @@ section {
     text-align: center;
 }
 
+/* aligns text in the about me section to the left */
 #about-me {
     text-align: left;
 }
 
+/* allows the content in the My Work section to display next to eachother */
  .my-work{
     display: inline-block;
     padding: 25px;
  }
 
+ /* puts the My Work heading to the left of the content */
  .my-work h2 {
     display: inline-flex;
     height: max-content;
@@ -102,6 +118,7 @@ section {
     float: left;
  }
 
+ /* allows content in the My Work section to grow and shrink when screen-size is changes */
 .my-work p {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +129,8 @@ section {
     margin-right: 25px;
 
 }
+
+/* makes the display boxes in My Work display evenly*/
 .container {
     flex-basis: 45%;
     height: 200px;
@@ -125,6 +144,7 @@ section {
     opacity: .85;
 }
 
+/* makes project one display box bigger than the others */
 #project-one {
     flex-basis: 92.5%;
     height: 350px;
@@ -133,11 +153,11 @@ section {
     border-style: solid;
     border-width: 3px;
     border-color: rgb(125, 167, 146);
-    ;
     font-size: 32px;
     padding: 25px;
 }
 
+/* sets style for the contact links */
 #contact {
     display: inline-block;
     height: fit-content;
@@ -152,22 +172,19 @@ section {
     background-color: rgb(125, 167, 146);
 }
 
+/* aligns footer text in the center */
 footer {
     text-align: center;
 }
 
+/* Puts the nav bar items in a column when the screen size shrinks */
 @media (max-width: 992px) {
     header nav ul li {
         width: 100%;
     }
-<<<<<<< HEAD
-    #contact {
-        width: 33%;
-    }
-=======
->>>>>>> 6a46c4c9e610453104892d7f419962308baf9f18
 }
 
+/* puts section headings above content, moves content to the left, puts contact links on top of eachother when screen shrinks below 768px */
 @media (max-width: 768px) {
     .content h2 {
         width: 100%;
@@ -188,9 +205,4 @@ footer {
     #contact {
         width: 100%;
     }
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 6a46c4c9e610453104892d7f419962308baf9f18
