@@ -5,5 +5,4 @@ My Professional Portfolio serves as a template that I will be able to use as I v
 
 Deployed site: https://hopemansfield.github.io/My-Professional-Portfolio/
 
-
-![_Users_hopemansfield_Desktop_challenges_My-Professional-Portfolio_index html](https://user-images.githubusercontent.com/116748007/205812481-4e0217f1-53bd-419a-9996-76f4e2b2ebb0.png)
+![hopemansfield github io_My-Professional-Portfolio_](https://user-images.githubusercontent.com/116748007/205812661-6e1b6d68-0a9f-486f-994f-fe5b09bbe90f.png)
