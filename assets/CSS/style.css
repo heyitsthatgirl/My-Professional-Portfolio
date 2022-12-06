@@ -1,7 +1,6 @@
 :root {
-    --background-color: rgba(125, 167, 146, 0.423);
+    --greenish: rgba(125, 167, 146, 0.423); 
 }
-
 
 * {
     box-sizing: border-box;
@@ -10,10 +9,9 @@
 }
 
 body {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px;
     background-image: linear-gradient(rgb(212, 251, 231) 0%, rgb(125, 167, 146) 100%);
 }
 
@@ -21,30 +19,28 @@ header {
     height: fit-content;
     width: 100%;
     margin-bottom: 25px;
+    padding: 10px;
+    background-color: var(--greenish);
 }
 
-.header {
-    padding-left: 15px;
-    background-color: var(--background-color);
-}
-
-.header-image {
-    display: block;
+header img {
+    display: flex;
+    flex-flow: row wrap;
     height: 150px;
     width: 125px;
     object-fit: contain;
     margin: 25px;
-    float: left; 
+    float: left;
     opacity: .90;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
     padding-top: 25px;
 }
 
-.header nav {
+header nav {
     padding-top: 40px;
     margin-right: 40px;
     float: right;
@@ -55,7 +51,7 @@ ul {
     display: block;
 }
 
-.header nav ul li {
+header nav ul li {
     list-style-type: none;
     display: inline-block;
     padding-right: 25px;
@@ -69,31 +65,31 @@ a {
 }
 
 section {
+    display: inline-flex;
     height: fit-content;
     width: 100%;
 }
 
-.about-me {
+.content {
     display: inline-block;
     padding: 25px;
 }
 
-.about-me h2 {
-    display: block;
+.content h2 {
+    display: flex;
+    height: max-content;
     width: 125px;
-    float: left;
     text-align: right;
-    font-size: 26px;
+    float: left;
 }
 
-.about-me p {
-    display: block;
-    height: fit-content;
+.content p {
+    display: flex;
+    flex-wrap: wrap;
     padding: 25px;
-    /* text-align: start; */
     border-left: solid;
     border-width: 1px;
-    margin-left: 135px;
+    margin-left: 125px;
     margin-right: 25px;
 }
 
@@ -108,125 +104,59 @@ section {
     border-style: dotted;
     border-width: 1px;
     border-radius: 5px;
-    background-color: var(--background-color);
+    background-color: rgb(125, 167, 146);
 
 }
 
-.my-work {
-    display: inline-block;
-    padding: 25px;
-}
-
-.my-work h2 {
-    display: block;
-    width: 125px;
-    float: left;
-    text-align: end;
-    font-size: 26px;
-}
-
-.my-work p {
-    display: block;
-    padding: 25px;
-    /* text-align: start; */
-    border-left: solid;
-    border-width: 1px;
-    margin-left: 135px;
-    margin-right: 25px;
-}
-
-.my-work p a {
-    position: relative;
-    text-align: left;
-}
-
-.my-work p img {
-    display: inline-block;
-    object-fit: cover;
-    opacity: .5;
-    height: 200px;
-    width: 45%;
-    min-width: 350px;
-    margin: 25px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--background-color);
-}
-
-#project-one {
-    display: inline-block;
-    object-fit: cover;
-    opacity: .5;
-    height: 300px;
-    width: 95%;
-    margin-top: auto;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--background-color);
-    
-} 
-
-.bottom-left { 
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    font-size: 24px;
-}  
-
-.bottom-left-project-uno { 
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    font-size: 32px;
-}
-
-
-
-
-/*.contact-me {
+.contact-me {
     display: inline-block;
     padding: 25px;
 }
 
 .contact-me h2 {
     display: block;
-    width: 125px;
-    float: left;
-    text-align: right;
-    font-size: 26px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding:auto;
+    text-align: center;
 
 }
 
 .contact-me p {
-    display: block;
-    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
     padding: 25px;
-    /* text-align: start; 
-    border-left: solid;
-    border-width: 1px;
-    margin-left: 135px;
+    margin-left: 125px;
     margin-right: 25px;
 }
-
-
-.section {
- 
-    margin-bottom: 25px;
+.container {
+    flex-basis: 45%;
+    height: 200px;
+    min-width: 350px;
+    margin: 15px;
     padding: 25px;
-}
-
-.section h2 {
-    
-    padding: 25px;
-    border-color: black;
-    border-width: 1px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(125, 167, 146);
     font-size: 26px;
+    opacity: .85;
 }
 
-.section p {
-    
-    border-left: solid;
-    border-top: solid;
-    text-align: start;
+#project-one {
+    flex-basis: 92.5%;
+    height: 350px;
+    min-width: 350px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(125, 167, 146);
+    ;
+    font-size: 32px;
     padding: 25px;
 }
+
+footer {
+    text-align: center;
+}
+
