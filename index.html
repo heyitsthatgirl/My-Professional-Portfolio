@@ -3,55 +3,95 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Professional Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Hope Mansfield</h1>
 
-<!-- recent image or avatar needed -->
+    <header class="header">
+        <h1>Hope <br> Mansfield</h1>
 
-        <img>
+        <img class="header-image" src="./assets/images/IMG_8476.jpeg">
 
         <nav>
             <ul>
-                <li>About Me</li>
+                <li>
+                    <a href="#About-Me">About Me</a>
+                </li>
 
-                <li>My work</li>
+                <li>
+                    <a href="#My-Work">My Work</a>
+                </li>
 
-                <li>Contact Me</li>
-                
-                <li></li>
+                <li>
+                    <a href="#Contact-Me">Contact Me</a>
+                </li>
+
             </ul>
         </nav>
     </header>
 
+    <main>
 
-<main>
+        <section id="About-Me" class="content">
+            <h2>About<br>Me</h2>
+            <p>
+                I am a part-time student currently enrolled in the fullstack coding bootcamp at UNC Chapel Hill. My
+                motivation for learning how to code stems from my love for the creative arts, and my penchant for
+                computational thinking. My personal goal is to cultivate a lifestyle that allows me to utilize both of
+                these skills on a daily basis. I believe coding is a valuable tool I can use to accomplish this.
+                <br>
+                <br>
+                I currently live in Charlotte, NC with my husband, our son, and our two dogs.
+            </p>
+        </section>
 
-    <!-- Section 1 larger than the others -->
-    <section>Project 1</section>
 
-    <section>Project 2</section>
+        <section id="My-Work" class="content">
+            <h2>My<br>Work</h2>
+            <p>
 
-    <section>Project 3</section>
+                <a class="container" id="project-one" href="https://hopemansfield.github.io/Horiseon-Code-Refactor/"
+                    target="_blank"
+                    style="background: no-repeat url(./assets/images/horiseon.png)">Horiseon Code
+                    Refactor</a>
 
-    <section>Project 4</section>
+                <a class="container" href="https://hopemansfield.github.io/prework-study-guide/" target="_blank"
+                    style="background: no-repeat url(./assets/images/hopemansfield.github.io_prework-study-guide_.png)">Prework
+                    Study Guide</a>
 
-    <section>Project 5</section>
+                <a class="container" href="https://hopemansfield.github.io/Student-Bio/" target="_blank"
+                    style="background: no-repeat url(./assets/images/student-bio2.png)">Student Bio</a>
 
-    <!-- Contact information at the bottom? -->
-    <section>Contact Me</section>
+            </p>
+        </section>
 
-</main>
 
-<footer></footer>
+        <section id="Contact-Me" class="contact-me">
+            <h2>Contact Me</h2>
+            <p>
+                <a id="contact" href="mailto:%20hopemansfield@gmail.com" target="_blank">Email Me</a>
+
+                <a id="contact" href="https://github.com/hopemansfield" target="_blank">GitHub</a>
+
+                <a id="contact" href="" target="_blank">LinkedIn</a>
+
+            </p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h4>Thank you for viewing my Portfolio!</h4>
+    </footer>
 
 
 </body>
+
+
 
 
 </html>
