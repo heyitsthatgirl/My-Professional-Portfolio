@@ -1,3 +1,161 @@
+:root {
+    --greenish: rgba(125, 167, 146, 0.423); 
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Arial', sans-serif;
+
+}
+
+body {
+    background-image: linear-gradient(rgb(212, 251, 231) 0%, rgb(125, 167, 146) 100%);
+}
+
+header {
+    display: inline-block;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: var(--greenish);
+}
+
+header img {
+    height: 150px;
+    width: 125px;
+    object-fit: contain;
+    margin: 25px;
+    float: left;
+    opacity: .90;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding-top: 25px;
+}
+
+header nav {
+    padding-top: 40px;
+    margin-right: 40px;
+    float: right;
+    font-size: 26px;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    width: 200px;
+    padding-right: 25px;
+    margin-top: 15px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    display: inline-block;
+    height: fit-content;
+    width: 100%;
+}
+
+.content {
+    display: inline-block;
+    padding: 25px;
+}
+
+.content h2 {
+    display: block;
+    height: max-content;
+    width: 110px;
+    text-align: right;
+    float: left;
+}
+
+.content p {
+    padding: 25px;
+    border-left: solid;
+    border-width: 1px;
+    margin-left: 125px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+#about-me {
+    text-align: left;
+}
+
+ .my-work{
+    display: inline-block;
+    padding: 25px;
+ }
+
+ .my-work h2 {
+    display: inline-flex;
+    height: max-content;
+    width: 110px;
+    text-align: right;
+    float: left;
+ }
+
+.my-work p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-left: solid;
+    border-width: 1px;
+    margin-left: 125px;
+    margin-right: 25px;
+
+}
+.container {
+    flex-basis: 45%;
+    height: 200px;
+    min-width: 350px;
+    margin: 15px;
+    padding: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(125, 167, 146);
+    font-size: 26px;
+    opacity: .85;
+}
+
+#project-one {
+    flex-basis: 92.5%;
+    height: 350px;
+    min-width: 350px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(125, 167, 146);
+    ;
+    font-size: 32px;
+    padding: 25px;
+}
+
+#contact {
+    display: inline-block;
+    height: fit-content;
+    width: 200px;
+    margin: 15px 50px 15px 50px;
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgb(125, 167, 146);
+}
+
+footer {
+    text-align: center;
+}
+
 @media (max-width: 992px) {
     header nav ul li {
         width: 100%;
