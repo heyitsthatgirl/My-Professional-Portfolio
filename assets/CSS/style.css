@@ -160,9 +160,12 @@ footer {
     header nav ul li {
         width: 100%;
     }
+<<<<<<< HEAD
     #contact {
         width: 33%;
     }
+=======
+>>>>>>> 6a46c4c9e610453104892d7f419962308baf9f18
 }
 
 @media (max-width: 768px) {
@@ -185,4 +188,9 @@ footer {
     #contact {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 6a46c4c9e610453104892d7f419962308baf9f18
