@@ -9,13 +9,11 @@
 }
 
 body {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-image: linear-gradient(rgb(212, 251, 231) 0%, rgb(125, 167, 146) 100%);
 }
 
 header {
+    display: inline-block;
     height: fit-content;
     width: 100%;
     margin-bottom: 25px;
@@ -24,8 +22,6 @@ header {
 }
 
 header img {
-    display: flex;
-    flex-flow: row wrap;
     height: 150px;
     width: 125px;
     object-fit: contain;
@@ -47,13 +43,10 @@ header nav {
     font-size: 26px;
 }
 
-ul {
-    display: block;
-}
-
 header nav ul li {
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
+    width: 200px;
     padding-right: 25px;
     margin-top: 15px;
 
@@ -65,7 +58,7 @@ a {
 }
 
 section {
-    display: inline-flex;
+    display: inline-block;
     height: fit-content;
     width: 100%;
 }
@@ -76,14 +69,40 @@ section {
 }
 
 .content h2 {
-    display: flex;
+    display: block;
     height: max-content;
-    width: 125px;
+    width: 110px;
     text-align: right;
     float: left;
 }
 
 .content p {
+    padding: 25px;
+    border-left: solid;
+    border-width: 1px;
+    margin-left: 125px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+#about-me {
+    text-align: left;
+}
+
+ .my-work{
+    display: inline-block;
+    padding: 25px;
+ }
+
+ .my-work h2 {
+    display: inline-flex;
+    height: max-content;
+    width: 110px;
+    text-align: right;
+    float: left;
+ }
+
+.my-work p {
     display: flex;
     flex-wrap: wrap;
     padding: 25px;
@@ -91,44 +110,7 @@ section {
     border-width: 1px;
     margin-left: 125px;
     margin-right: 25px;
-}
 
-#contact {
-    display: inline-block;
-    height: fit-content;
-    width: 200px;
-    margin: 15px 50px 15px 100px;
-    padding: 15px;
-    font-size: 32px;
-    text-align: center;
-    border-style: dotted;
-    border-width: 1px;
-    border-radius: 5px;
-    background-color: rgb(125, 167, 146);
-
-}
-
-.contact-me {
-    display: inline-block;
-    padding: 25px;
-}
-
-.contact-me h2 {
-    display: block;
-    height: auto;
-    width: auto;
-    margin: auto;
-    padding:auto;
-    text-align: center;
-
-}
-
-.contact-me p {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px;
-    margin-left: 125px;
-    margin-right: 25px;
 }
 .container {
     flex-basis: 45%;
@@ -156,7 +138,51 @@ section {
     padding: 25px;
 }
 
+#contact {
+    display: inline-block;
+    height: fit-content;
+    width: 200px;
+    margin: 15px 50px 15px 50px;
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgb(125, 167, 146);
+}
+
 footer {
     text-align: center;
 }
 
+@media (max-width: 992px) {
+    header nav ul li {
+        width: 100%;
+    }
+    #contact {
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h2 {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .my-work h2 {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .content p {
+        margin-left: auto;
+    }
+    .my-work p {
+        margin-left: auto;
+    }
+    #contact {
+        width: 100%;
+    }
+}
